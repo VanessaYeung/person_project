@@ -201,7 +201,7 @@ list-style-type: none;
         margin-left: 4em;
 }
 
-.example{
+/* .example{
     position:relative;
     writing-mode: horizontal-tb;
     margin-inline-start: 2rem;
@@ -218,7 +218,7 @@ list-style-type: none;
 .exalpe:hover{
 background: #00c821;
 color:aliceblue;
-}
+} */
 
 h1{
 color:transparent;
@@ -226,7 +226,7 @@ color:transparent;
 
 /* drinks&foods */
 .drinks-foods-containers {
-    max-width:1100px;
+    /* max-width:1100px;
     border-radius:10px;
     margin:0 auto;
     padding:70px 60px;
@@ -234,11 +234,22 @@ color:transparent;
     background-color: var(--clr-primary-7);
     border:var(--clr-primary-8) 3px solid;
     border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2); */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 60px;
+    background-color: rgba(231, 237, 122, 0.8);
+    border: var(--clr-primary-8) 3px solid;
+    border-radius: 10px;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
-
+.drink-foods-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
 .drink-foods-container li {
-    background-color: rgb(234, 248, 214);
+    /* background-color: rgb(234, 248, 214);
     padding: 25px;
     vertical-align: top;
     margin:20px 3px 0px 3px;
@@ -247,7 +258,12 @@ color:transparent;
     border-radius: 20px;
     text-align:center;
     overflow: hidden;
-    position: relative;
+    position: relative; */
+    background-color: rgb(234, 248, 214);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 /* .text1 p{
@@ -259,21 +275,45 @@ color:transparent;
 } */
 
 .box_photos {
-    max-height: 300px;
+    /* max-height: 300px;
     max-width: 100%;
     margin:10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     /* border:transparent 3px; */
     border-radius: 10px;
+    max-width: 50%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .box_title{
-    display:flex;
+    /* display:flex;
     font-size: 1.6rem;
     font-weight: bold;
     background-color: var(--clr-primary-3);
     border-radius: 30px;
-    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.2); */
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: var(--clr-primary-3);
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.no1,.no2,.no3,.no4,.no5 p{
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: left;
+    }
 }
 
 /* breadcrumb */
